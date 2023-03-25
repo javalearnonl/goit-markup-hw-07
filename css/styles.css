@@ -830,6 +830,15 @@ img {
   font-size: 18px;
   line-height: 1.17em;
 }
+.nav-logo-blue {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17em;
+
+  letter-spacing: 0.03em;
+
+  color: var(--button-color);
+}
 .white {
   color: var(--white-color);
   font-size: 18px;
