@@ -685,6 +685,7 @@ img {
 @media screen and (min-width: 1200px) {
   .customers.list {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
