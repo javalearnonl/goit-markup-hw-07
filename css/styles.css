@@ -243,7 +243,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('./images/hero/hero-phone.jpg');
+    url('../images/hero/hero-phone.jpg');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -823,6 +823,9 @@ img {
   justify-content: start;
   margin-right: 120px;
 } */
+.blue.link {
+  margin-bottom: 17px;
+}
 .nav-logo {
   color: var(--main-color);
   padding: 24px 0;
@@ -925,20 +928,19 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer .container {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 108px;
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    padding: 0;
+  }
+}
 .footer-info {
   justify-content: center;
   display: flex;
@@ -1283,8 +1285,8 @@ img {
 }
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 576px;
+  min-width: 391px;
+  /* min-height: 576px; */
   left: 50%;
   top: 50%;
   padding: 72px 24px 24px;
@@ -1294,6 +1296,11 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 400px) {
+  .modal {
+    min-width: 300px;
+  }
 }
 .modal-close-black {
   position: absolute;
